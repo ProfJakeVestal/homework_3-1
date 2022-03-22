@@ -16,10 +16,14 @@ contract.secType  = 'CASH'
 contract.exchange = 'IDEALPRO'  # 'IDEALPRO' is the currency exchange.
 contract.currency = value.split(".")[1]
 
-# Get your historical data
-historical_data = fetch_historical_data(contract)
+# Get your contract details
+contract_details = fetch_contract_details(contract)
 
-# Print it! This should be a dataframe that's ready to go.
-print(historical_data)
+
+str(contract_details).split(",")[10]
+
+contract_details
+
+print(contract_details)
 
 # This script is an excellent place for scratch work as you figure this out.
